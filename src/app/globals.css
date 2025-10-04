@@ -1,69 +1,20 @@
 @import "tailwindcss";
 
-/* Light theme mặc định */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-
-  --color-primary: #6366f1;
-  --color-secondary: #8b5cf6;
-  --color-accent: #06b6d4;
-  --color-error: #df3f40;
-  --color-border: #e3e6ea;
-
-  --spacing-outer: 20px;
-  --spacing-gutter: 16px;
-
-  --radius-card: 6px;
-
-  --font-sans: Arial, Helvetica, sans-serif;
-  --font-size-base: 16px;
-  --font-weight-heading: 500;
-  --font-weight-body: 400;
+  --background: #f5f5f5;
+  --foreground: #262626;
+  --color-primary: #1890ff;
+  --color-border: #d9d9d9;
 }
-
-/* Dark theme (tự động theo system) */
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-    --color-border: #444;
-  }
-} */
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-sans);
-  font-size: var(--font-size-base);
-  font-weight: var(--font-weight-body);
-  line-height: 1.5;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
-/* Heading style */
-h1, h2, h3, h4, h5, h6 {
-  font-weight: var(--font-weight-heading);
-  color: var(--foreground);
+* {
+  box-sizing: border-box;
 }
-
-/* Card & input mặc định */
-.card, .input {
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-card);
-  padding: var(--spacing-outer);
-  background: var(--background);
-  color: var(--foreground);
-}
-
-/* Utility classes */
-.text-primary   { color: var(--color-primary); }
-.text-secondary { color: var(--color-secondary); }
-.text-accent    { color: var(--color-accent); }
-.text-error     { color: var(--color-error); }
-
-.bg-primary     { background-color: var(--color-primary); }
-.bg-secondary   { background-color: var(--color-secondary); }
-.bg-accent      { background-color: var(--color-accent); }
-.bg-error       { background-color: var(--color-error); }
